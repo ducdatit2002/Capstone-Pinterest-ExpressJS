@@ -23,9 +23,9 @@
     -   http://localhost:6969/api/v1/image/comment
 -   GET thông tin user
     -   http://localhost:6969/api/v1/user
--   GET danh sách ảnh đã lưu theo user id
-    -   http://localhost:6969/api/v1/user/images-created
 -   GET danh sách ảnh đã tạo theo user id
+    -   http://localhost:6969/api/v1/user/images-created
+-   GET danh sách ảnh đã lưu theo user id
     -   http://localhost:6969/api/v1/user/images-saved
 -   DELETE xoá ảnh đã tạo theo id
     -   http://localhost:6969/api/v1/image/delete/1

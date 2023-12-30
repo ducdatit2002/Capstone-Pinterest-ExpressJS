@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "db00a1c8-287f-4d86-a1ec-566ea27c19d6",
+		"name": "Capstone ORM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30124089"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"phamducdat\",\n    \"password\": \"123456\",\n    \"email\": \"phamducdat@gmail.com\",\n    \"phoneNumber\": \"0902850103\",\n    \"fullName\": \"Phạm Đức Đạt\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:6969/api/v1/user/register"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"phamducdat\",\n    \"password\": \"123456\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:6969/api/v1/user/login"
+			},
+			"response": []
+		},
+		{
+			"name": "get-list-image",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"khachhang\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:6969/api/v1/image/list"
+			},
+			"response": []
+		},
+		{
+			"name": "get-image-name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6969/api/v1/image/search?searchText=a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"api",
+						"v1",
+						"image",
+						"search"
+					],
+					"query": [
+						{
+							"key": "searchText",
+							"value": "a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-image-user-by-id-imgage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:6969/api/v1/image/image-info/5"
+			},
+			"response": []
+		},
+		{
+			"name": "get-comment-by-id-image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:6969/api/v1/image/comment/3"
+			},
+			"response": []
+		},
+		{
+			"name": "get-info-save-image-by-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:6969/api/v1/image/image-info/10"
+			},
+			"response": []
+		},
+		{
+			"name": "save-comment-of-user-with-image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"imageId\": 11,\n    \"content\": \"qua la xinh dep\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:6969/api/v1/image/comment"
+			},
+			"response": []
+		},
+		{
+			"name": "get-info-user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:6969/api/v1/user"
+			},
+			"response": []
+		},
+		{
+			"name": "get-image-created-list-by-user-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:6969/api/v1/user/images-created"
+			},
+			"response": []
+		},
+		{
+			"name": "get-image-save-list-by-user-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:6969/api/v1/user/images-saved"
+			},
+			"response": []
+		},
+		{
+			"name": "put-user-info",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"phamducdat\",\n    \"email\": \"phamducdat@gmail.com\",\n    \"phoneNumber\": \"0902850103\",\n    \"fullName\": \"Phạm Đức Đạt\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:6969/api/v1/user/update"
+			},
+			"response": []
+		},
+		{
+			"name": "delete-img-created-by-user-id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:6969/api/v1/image/delete/1"
+			},
+			"response": []
+		}
+	]
+}
