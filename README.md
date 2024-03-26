@@ -14,9 +14,6 @@
     -   http://localhost:6969/api/v1/image/image-info/10
 -   GET thông tin bình luận theo id ảnh
     -   http://localhost:6969/api/v1/image/comment/10
-
-# Trần Ngọc Nhân
-
 -   GET thông tin đã lưu hình này chưa theo id ảnh
     -   http://localhost:6969/api/v1/image/image-info/1 (need to provide tokens)
 -   POST lưu thông tin bình luận của người dùng với hình ảnh
