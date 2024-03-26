@@ -1,4 +1,4 @@
-# Phạm Đức Đạt
+# API
 
 -   POST trang đăng ký
     -   http://localhost:6969/api/v1/user/register
